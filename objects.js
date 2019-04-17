@@ -1,7 +1,8 @@
 var playlist = { Judee Sill: "The Kiss"};
 
 function updatePlaylist(list, artist, song){
-  return Object.assign({}, list, {artist: song})
+  list.artist=song;
+  return list
 }
 function removeFromPlaylist(list, artist){
   delete list.artist;
